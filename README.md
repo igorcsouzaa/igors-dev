@@ -1,6 +1,6 @@
-# TechNova - Site Institucional
+# Igor's dev - Site Comercial
 
-Este é um site institucional moderno e responsivo, desenvolvido utilizando apenas **HTML, CSS e JavaScript puro**, conforme solicitado.
+Este é um site comercial moderno e responsivo, desenvolvido utilizando apenas **HTML, CSS e JavaScript puro**, conforme solicitado.
 
 ## Estrutura do Projeto
 
@@ -27,7 +27,3 @@ Para visualizar o site, basta abrir o arquivo `index.html` em qualquer navegador
 # 1. Descompacte o arquivo ZIP.
 # 2. Abra o arquivo index.html no seu navegador.
 ```
-
-## Próximos Passos
-
-Recomenda-se substituir as imagens de placeholder (`assets/*.jpg` e `assets/*.png`) por conteúdo visual real do seu grupo e projetos.
