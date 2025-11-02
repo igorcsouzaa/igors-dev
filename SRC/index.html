@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IgorDev - Soluções em Desenvolvimento e IA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Cabeçalho e Navegação -->
+    <header id="header">
+        <div class="container">
+            <a href="#home" class="logo">Igor's Dev</a>
+            <nav id="nav-menu">
+                <a href="#home">Início</a>
+                <a href="#about">Quem Somos</a>
+                <a href="#services">Serviços</a>
+                <a href="#portfolio">Portfólio</a>
+                <a href="#contact">Contato</a>
+            </nav>
+            <button class="menu-toggle" aria-label="Abrir Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+       <section id="home" class="hero">
+        <video autoplay muted loop playsinline class="background-video">
+            <source src="assets/hero-bg.mp4" type="video/mp4" />
+        </video>
+
+        <div class="hero-content">
+            <h1>Transformamos Ideias em Realidade Digital.</h1>
+            <p>Desenvolvimento Web, Aplicativos e Automações Inteligentes para o seu negócio.</p>
+            <a href="#contact" class="btn-primary">Fale Conosco Agora</a>
+        </div>
+        </section>
+
+        <!-- Seção Quem Somos -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2>Quem Somos</h2>
+                <div class="about-content">
+                    <p>A <span>IgorDev</span> é um grupo apaixonado por tecnologia e inovação, dedicado a construir soluções digitais que 
+                        impulsionam o crescimento dos nossos clientes. Nossa missão é <b>simplificar</b> o complexo, entregando produtos
+                         de alta qualidade, escaláveis e com foco total na experiência do usuário.</p>
+                    <div class="values">
+                        <h3>Nossos Valores</h3>
+                        <ul>
+                            <li><i class="fas fa-lightbulb"></i> <b>Inovação:</b> Buscamos sempre as tecnologias mais recentes.</li>
+                            <li><i class="fas fa-handshake"></i> <b>Transparência:</b> Construímos parcerias baseadas na confiança.</li>
+                            <li><i class="fas fa-cogs"></i> <b>Excelência Técnica:</b> Código limpo, robusto e eficiente.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Serviços -->
+        <section id="services" class="section bg-light">
+            <div class="container">
+                <h2>Nossos Serviços</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <i class="fas fa-globe service-icon"></i>
+                        <h3>Desenvolvimento Web</h3>
+                        <p>Criação de sites institucionais, <br>e-commerces e sistemas web complexos, focados em performance e SEO.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-laptop service-icon"></i>
+                        <h3>Criação de Aplicativos</h3>
+                        <p>Criamos aplicativos desktop personalizados com foco em desempenho, usabilidade e integração inteligente.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-robot service-icon"></i>
+                        <h3>Automações com IA</h3>
+                        <p>Implementação de soluções de IA para otimizar processos, analisar dados e criar experiências personalizadas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Portfólio -->
+        <section id="portfolio" class="section">
+            <div class="container">
+                <h2>Portfólio</h2>
+                <div class="portfolio-carousel">
+                    <!-- Itens do carrossel (serão populados e controlados via JS) -->
+                    <div class="carousel-item active" data-link="https://raintrack.pythonanywhere.com">
+                        <img src="assets/portfolio-web.png" alt="Projeto Web de Medição Meteorológica">
+                        <div class="item-description">
+                            <h4>Sistema de Medição Meteorológica</h4>
+                            <p>Plataforma web completa para medição e análise de dados meteorológicos.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" data-link="https://automacaoexcel.pythonanywhere.com/">
+                        <img src="assets/portfolio-app.png" alt="Projeto Web de Automação de Excel">
+                        <div class="item-description">
+                            <h4>Sistema de Automação de Excel</h4>
+                            <p>Plataforma web para automatização de preenchimento de arquivos excel</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" data-link="https://chatbot-demo.com">
+                        <img src="assets/portfolio-ia.png" alt="Projeto de Automação com IA">
+                        <div class="item-description">
+                            <h4>Sistema de Controle de Estoque</h4>
+                            <p></p>
+                        </div>
+</div>
+                    <button class="carousel-control prev" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>
+                    <button class="carousel-control next" aria-label="Próximo"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Depoimentos/Parcerias -->
+        <section id="testimonials" class="section bg-light">
+            <div class="container">
+                <h2>O que dizem sobre nós</h2>
+                <div class="testimonial-card">
+                    <p>"A TechNova entregou um projeto web que superou nossas expectativas em performance e design. Profissionais altamente competentes!"</p>
+                    <p class="client-name">- João Silva, CEO da InovaCorp</p>
+                </div>
+                <!-- Espaço para logos de parceiros -->
+                <div class="partners-logos">
+                    <h3>Nossos Parceiros</h3>
+                    <!-- Logos simulados -->
+                    <img src="assets/partner-logo-1.png" alt="Logo Parceiro 1">
+                    <img src="assets/partner-logo-2.png" alt="Logo Parceiro 2">
+                    <img src="assets/partner-logo-3.png" alt="Logo Parceiro 3">
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Contato -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Entre em Contato</h2>
+                <div class="contact-grid">
+                    <form class="contact-form">
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="message">Mensagem:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+
+                        <button type="submit" class="btn-primary">Enviar Mensagem</button>
+                    </form>
+
+                    <div class="contact-info">
+                        <h3>Conecte-se Conosco</h3>
+                        <div class="social-links">
+                            <a href="#" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                            <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                            <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i> Instagram</a>
+                        </div>
+                        <p>Ou envie um e-mail diretamente para: contato@technova.com</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#home" class="logo">TechNova</a>
+                    <p>&copy; 2025 TechNova. Todos os direitos reservados.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <a href="#home">Início</a>
+                    <a href="#services">Serviços</a>
+                    <a href="#portfolio">Portfólio</a>
+                </div>
+                <div class="footer-social">
+                    <h4>Siga-nos</h4>
+                    <a href="#" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
