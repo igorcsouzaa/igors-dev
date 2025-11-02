@@ -1,7 +1,5 @@
 # Igor's dev - Site Comercial
 
-Este é um site comercial moderno e responsivo, desenvolvido utilizando apenas **HTML, CSS e JavaScript puro**, conforme solicitado.
-
 ## Estrutura do Projeto
 
 O projeto está organizado nos seguintes arquivos principais:
