@@ -90,7 +90,7 @@
                 <div class="portfolio-carousel">
                     <!-- Itens do carrossel (serão populados e controlados via JS) -->
                     <div class="carousel-item active" data-link="https://raintrack.pythonanywhere.com">
-                        <img src="assets/portfolio-web.png" alt="Projeto Web de Medição Meteorológica">
+                        <img src="assets/portfolio-RainTrack.png" alt="Projeto Web de Medição Meteorológica">
                         <div class="item-description">
                             <h4>Sistema de Medição Meteorológica</h4>
                             <p>Plataforma web completa para medição e análise de dados meteorológicos.</p>
@@ -98,20 +98,28 @@
                     </div>
 
                     <div class="carousel-item" data-link="https://automacaoexcel.pythonanywhere.com/">
-                        <img src="assets/portfolio-app.png" alt="Projeto Web de Automação de Excel">
+                        <img src="assets/portfolio-autoExcel.png" alt="Projeto Web de Automação de Excel">
                         <div class="item-description">
                             <h4>Sistema de Automação de Excel</h4>
                             <p>Plataforma web para automatização de preenchimento de arquivos excel</p>
                         </div>
                     </div>
 
-                    <div class="carousel-item" data-link="https://chatbot-demo.com">
-                        <img src="assets/portfolio-ia.png" alt="Projeto de Automação com IA">
+                    <div class="carousel-item" data-link="#">
+                        <img src="assets/portfolio-controleEstoque.png" alt="Projeto App Controle de Estoque">
                         <div class="item-description">
                             <h4>Sistema de Controle de Estoque</h4>
-                            <p></p>
+                            <p>Aplicativo de controle de estoque com entradas e saídas, ponto de reposição, rastreio por lote e relatórios.</p>
                         </div>
-</div>
+                    </div>
+
+                    <div class="carousel-item" data-link="#">
+                        <img src="assets/portfolio-controleEntrada.png" alt="Projeto App Controle de Entrada">
+                        <div class="item-description">
+                            <h4>Sistema de Controle de Entrada</h4>
+                            <p>Aplicativo de controle de entrada e credenciamento em portarias.</p>
+                        </div>
+                    </div>
                     <button class="carousel-control prev" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>
                     <button class="carousel-control next" aria-label="Próximo"><i class="fas fa-chevron-right"></i></button>
                 </div>
@@ -123,16 +131,14 @@
             <div class="container">
                 <h2>O que dizem sobre nós</h2>
                 <div class="testimonial-card">
-                    <p>"A TechNova entregou um projeto web que superou nossas expectativas em performance e design. Profissionais altamente competentes!"</p>
-                    <p class="client-name">- João Silva, CEO da InovaCorp</p>
+                    <p>"A Igor's Dev entregou um projeto web que superou nossas expectativas em performance e design. Profissionais altamente competentes!"</p>
+                    <p class="client-name">- Diogo Branquinho, CEO da Tecsus</p>
                 </div>
                 <!-- Espaço para logos de parceiros -->
                 <div class="partners-logos">
                     <h3>Nossos Parceiros</h3>
-                    <!-- Logos simulados -->
-                    <img src="assets/partner-logo-1.png" alt="Logo Parceiro 1">
-                    <img src="assets/partner-logo-2.png" alt="Logo Parceiro 2">
-                    <img src="assets/partner-logo-3.png" alt="Logo Parceiro 3">
+                    <img src="assets/tecsuslogo.png" alt="Logo Tecsus">
+                    <img src="assets/eteclogo.png" alt="Logo Etec Ilza Nascimento Pintus">
                 </div>
             </div>
         </section>
@@ -142,7 +148,12 @@
             <div class="container">
                 <h2>Entre em Contato</h2>
                 <div class="contact-grid">
-                    <form class="contact-form">
+                    <form id="contactForm" class="contact-form" action="https://formsubmit.co/igorcs1104@gmail.com" method="POST">
+                        <!-- FormSubmit options / segurança -->
+                        <input type="hidden" name="_subject" value="Novo contato pelo site - Igor's Dev">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="text" name="_honey" style="display:none">
                         <label for="name">Nome:</label>
                         <input type="text" id="name" name="name" required>
 
@@ -152,17 +163,18 @@
                         <label for="message">Mensagem:</label>
                         <textarea id="message" name="message" rows="5" required></textarea>
 
-                        <button type="submit" class="btn-primary">Enviar Mensagem</button>
+                        <div id="formStatus" class="form-status" role="status" aria-live="polite"></div>
+                        <button id="contactSubmit" type="submit" class="btn-primary">Enviar Mensagem</button>
                     </form>
 
                     <div class="contact-info">
                         <h3>Conecte-se Conosco</h3>
                         <div class="social-links">
-                            <a href="#" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                            <a href="wa.me/5512988993741" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
                             <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
                             <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i> Instagram</a>
                         </div>
-                        <p>Ou envie um e-mail diretamente para: contato@technova.com</p>
+                        <p>Ou envie um e-mail diretamente para: igorsdev@gmail.com</p>
                     </div>
                 </div>
             </div>
@@ -174,8 +186,8 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <a href="#home" class="logo">TechNova</a>
-                    <p>&copy; 2025 TechNova. Todos os direitos reservados.</p>
+                    <a href="#home" class="logo">Igor's Dev</a>
+                    <p>&copy; 2025 Igor's Dev. Todos os direitos reservados.</p>
                 </div>
                 <div class="footer-links">
                     <h4>Links Rápidos</h4>
