@@ -6,18 +6,67 @@ document.addEventListener('DOMContentLoaded', () => {
     const navMenu = document.getElementById('nav-menu');
     const header = document.getElementById('header');
 
-    // Função para alternar a visibilidade do menu
-    menuToggle.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
-    });
+    // Acessibilidade: atrela ARIA e overlay
+    if (menuToggle) {
+        menuToggle.setAttribute('aria-controls', 'nav-menu');
+        menuToggle.setAttribute('aria-expanded', 'false');
+    }
 
-    // Fechar o menu ao clicar em um link (apenas em mobile)
-    navMenu.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', () => {
-            if (navMenu.classList.contains('active')) {
-                navMenu.classList.remove('active');
+    let overlay = document.getElementById('nav-overlay');
+    if (!overlay) {
+        overlay = document.createElement('div');
+        overlay.id = 'nav-overlay';
+        overlay.setAttribute('aria-hidden', 'true');
+        document.body.appendChild(overlay);
+    }
+
+    const icon = menuToggle ? menuToggle.querySelector('i') : null;
+
+    const setMenuState = (open) => {
+        if (!menuToggle || !navMenu) return;
+        navMenu.classList.toggle('active', open);
+        document.body.classList.toggle('menu-open', open);
+        menuToggle.classList.toggle('open', open);
+        menuToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        menuToggle.setAttribute('aria-label', open ? 'Fechar Menu' : 'Abrir Menu');
+        if (overlay) overlay.classList.toggle('active', open);
+
+        // Troca do ícone (compatível com FA5/FA6)
+        if (icon) {
+            if (open) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+                icon.classList.add('fa-xmark');
+            } else {
+                icon.classList.add('fa-bars');
+                icon.classList.remove('fa-times');
+                icon.classList.remove('fa-xmark');
             }
+        }
+    };
+
+    // Toggle do menu
+    if (menuToggle) {
+        menuToggle.addEventListener('click', () => {
+            setMenuState(!navMenu.classList.contains('active'));
         });
+    }
+
+    // Fechar ao clicar em um link
+    if (navMenu) {
+        navMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => setMenuState(false));
+        });
+    }
+
+    // Fechar ao clicar fora (overlay)
+    if (overlay) {
+        overlay.addEventListener('click', () => setMenuState(false));
+    }
+
+    // Fechar com ESC
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') setMenuState(false);
     });
 
     // ====================================================
