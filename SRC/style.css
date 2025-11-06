@@ -284,7 +284,7 @@ body {
 /* Seção Portfólio (Carrossel) */
 .portfolio-carousel {
     position: relative;
-    max-width: 800px;
+    max-width: 900px;
     margin: 40px auto 0;
     overflow: hidden;
     border-radius: 10px;
@@ -630,7 +630,7 @@ li b {
     }
 
     .service-card {
-        width: 60%;
+        width: 100%;
     }
 
     /* Contato */

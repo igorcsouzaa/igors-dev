@@ -191,7 +191,7 @@ if (contactForm) {
     setStatus('Enviando sua mensagem...', 'info');
 
     try {
-      const response = await fetch('https://formsubmit.co/ajax/igorcs1104@gmail.com', {
+      const response = await fetch('https://formsubmit.co/ajax/igorsdev67@gmail.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -217,7 +217,7 @@ if (contactForm) {
         throw new Error('Erro no envio');
       }
     } catch (err) {
-      setStatus('Não foi possível enviar agora. Tente novamente mais tarde ou envie e-mail para igorcs1104@gmail.com.', 'error');
+      setStatus('Não foi possível enviar agora. Tente novamente mais tarde ou envie e-mail para igorsdev67@gmail.com.', 'error');
     } finally {
       if (submitBtn) {
         submitBtn.disabled = false;
